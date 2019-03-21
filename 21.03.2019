@@ -1,0 +1,28 @@
+/**
+ * Illustrating correct & wrong inner border-radius
+ */
+
+.outer {
+	padding: 10px;
+	margin: 10px;
+	border: 1px solid silver;
+	box-shadow: 0 0 10px gray;
+	border-radius: 90px;
+}
+
+div div {
+	padding: 30px;
+	background: slategray;
+	font-size: 300%;
+	font-weight: bold;
+	color: white;
+	border-radius:90px;
+}
+
+.outer.wrong div {
+	border-radius: inherit;
+}
+
+
+<div class="outer right"><div>Hello my name ist Marcel</div></div>
+<div class="outer wrong"><div>this is a test to see how CSS works</div></div>
